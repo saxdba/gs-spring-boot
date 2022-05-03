@@ -43,6 +43,7 @@ stages:
       displayName: 'Publish pipeline artifacts'
       inputs:
         targetPath: $(Build.ArtifactStagingDirectory)
+    - task: PublishBuildArtifacts@1
 
 - stage: Deploy
   displayName: Deploy stage
